@@ -41,6 +41,12 @@ def main():
     print(f"Count of scores: {len(scores)}")
     print(f"Sum: {total}")
     print(f"Average: {avg}")
+ 
+#Display max and min if available (these will be present after merging local into main)
+    if len(scores) > 0:
+        print("\n=== local branch output (max & min) ===")
+        print(f"Maximum: {max(scores)}")
+        print(f"Minimum: {min(scores)}")
 
 if __name__ == "__main__":
     main()
